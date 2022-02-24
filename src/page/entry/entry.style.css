@@ -3,8 +3,10 @@
     display :flex;
     justify-content: center;
     align-items: center;
-    background-image: url("http://mdbootstrap.com/img/Photos/Others/images/91.webp");
-}
+    background-image: url("http://mdbootstrap.com/img/Photos/Others/images/91.webp"); 
+    /* background-image: url("https://previews.123rf.com/images/anyaberkut/anyaberkut1707/anyaberkut170700225/82504537-crm-concept-on-white-background-customer-relationship-management.jpg"); */
+    
+} 
 .form-box
 { box-shadow : 0px 0px 15px -5px black;
 

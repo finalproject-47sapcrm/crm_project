@@ -11,7 +11,7 @@ export const LoginForm = ({handleOnChange , email, frmSwitcher,pas,handleOnSubmi
   <hr />
   <Form autocomplete="off" onSubmit={handleOnSubmit} >
   <Form.Group>
-      <Form.Label> Email Address</Form.Label>
+      <Form.Label> Subject</Form.Label>
       <Form.Control 
           type="email"
           name="email"
@@ -26,8 +26,8 @@ export const LoginForm = ({handleOnChange , email, frmSwitcher,pas,handleOnSubmi
   <Form.Group>
       <Form.Label> Password</Form.Label>
       <Form.Control 
-          type="password"
-          name="password"
+          type="date"
+          name="issuedate"
           value={pas}
           onChange={handleOnChange}
           placeholder=" Enter password"
@@ -35,7 +35,9 @@ export const LoginForm = ({handleOnChange , email, frmSwitcher,pas,handleOnSubmi
           
 
       />
-  </Form.Group>
+      </Form.Group>
+  
+  
   <div className =" text-center  mt-3">
   <Button  type="submit">Login</Button>
   </div>
@@ -57,7 +59,7 @@ export const LoginForm = ({handleOnChange , email, frmSwitcher,pas,handleOnSubmi
     
   );
 };
-LoginForm.prototype={// parameters  checking for having  definite datatype
+LoginForm.propTypes = {// parameters  checking for having  definite datatype
   handleOnChange:PropTypes.func.isRequired,
   handleOnSubmit:PropTypes.func.isRequired,
   email:PropTypes.string.isRequired,

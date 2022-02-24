@@ -1,0 +1,15 @@
+.add-new-ticket{
+    /*  background-image: url("https://previews.123rf.com/images/anyaberkut/anyaberkut1707/anyaberkut170700225/82504537-crm-concept-on-white-background-customer-relationship-management.jpg");  */
+    /* background-image: url("http://mdbootstrap.com/img/Photos/Others/images/91.webp");  */
+    
+    box-shadow: 0px 0px 15px -5px black;
+    max-width: 400px;
+    margin-left:auto ;
+    margin-bottom: 50px;
+
+}   
+.body{
+    /* background-image:url("https://c0.wallpaperflare.com/preview/698/633/73/start-up-start-up-revenue.jpg");  */
+    background: url("https://email.uplers.com/blog/wp-content/uploads/2020/05/CRM-manager.jpg");
+    background-repeat: no-repeat;
+}
