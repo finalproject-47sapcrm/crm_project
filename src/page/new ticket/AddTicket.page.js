@@ -5,6 +5,8 @@ import {PageBreadcrum} from "../../components/breadcrum/Breadcrum.comp";
 import { AddTicketForm } from '../../components/add.ticket.form/AddTicketForm.comp';
 import {shortText} from '../../utils/validation'
 
+
+
 const initFromDt={subjects: "", issuedate:" ",details:""};
 const initFromDtErr={subjects: false, issuedate:false,details:false};
 

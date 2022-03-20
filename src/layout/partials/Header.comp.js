@@ -1,27 +1,53 @@
 import React from 'react'
-import {Navbar , Nav} from 'react-bootstrap'
+import {Navbar , Nav,Container} from 'react-bootstrap'
 import icon from "../../assets/img/icon.png"
+/* import {
+  BrowserRouter as
+  Link
+} from "react-router-dom";
+  */
+import {useHistory} from "react-router-dom";
+import {LinkContainer } from 'react-router-bootstrap';
 
 export const Header= () => {
+  const history= useHistory();
+  const logMeOut = () =>
+  {
+    history.push("/");
+  };
   return (
     <div>
-    <Navbar collapseOnSelect bg="dark" variant="primary" expand="lg">
+    <Navbar collapseOnSelect  fixed="top" bg="info" variant="dark" expand="lg">
+    <Container>
     <Navbar.Brand>  
     <img src= {icon} alt="logo" width="50px" />
     </Navbar.Brand>
-    <Navbar.Toggle aria-controls='basic-navbar-nav' /> 
-    <Navbar.Collapse id='basic-navbar-nav'>  
+    <Navbar.Toggle aria-controls='responsive-navbar-nav' /> 
+    <Navbar.Collapse id='responsive-navbar-nav'>  
     <Nav className ="ms-auto">   {/* ms- margin left */}
-    <Nav.Link href ="/dashboard">Dashboard</Nav.Link>
+    {/*  <Nav.Link href ="/dashboard">Dashboard</Nav.Link>
     <Nav.Link href ="/dashboard">Tickets</Nav.Link>
-    <Nav.Link href ="/dashboard">Logout</Nav.Link>
+    <Nav.Link href ="/dashboard">Logout</Nav.Link>*/}
+    {/* <Link to ="/dashboard">  Dashboard  </Link>
 
+
+    <Link to ="/tickets">    Tickets     </Link>
+
+    <Link to ="">     Logout    </Link> */}
+    <LinkContainer to ="/dashboard">
+    <Nav.Link > Dashboard </Nav.Link>
+    </LinkContainer>
+    <LinkContainer to ="/ticket-list">
+    <Nav.Link >Tickets</Nav.Link>
+    </LinkContainer>
+    <Nav.Link onClick={logMeOut}>Logout</Nav.Link> 
 
     </Nav>
     
     
     
     </Navbar.Collapse>
+    </Container>
 
 
 

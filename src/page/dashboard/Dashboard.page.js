@@ -6,6 +6,11 @@ import { TicketTable } from '../../components/ticket table/TicketTable.comp';
 import tickets from "../../assets/data/dummy-tickets.json";
 import {PageBreadcrum} from "../../components/breadcrum/Breadcrum.comp";
 
+import {Link
+
+}from "react-router-dom";
+
+
 
 export const Dashboard = () => {
   return (
@@ -18,10 +23,12 @@ export const Dashboard = () => {
     <Row>  
     <Col classsName="text-center mt-5 mb-2">  
     <div className =" text-center  mt-3"> 
+     <Link to ="new-ticket">
     <Button variant ="dark" style={{'font-size':'2rem','padding':'10px 30px'}} >  Add a new ticket.
 
 
     </Button>
+    </Link>
     </div>
     </Col>   
     </Row>

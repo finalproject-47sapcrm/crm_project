@@ -155,8 +155,8 @@ export const Footer = () => {
 
   <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
     © 2022 Copyright:CRM  portal. All rights reserved
-  </div>
-</MDBFooter>
+  </div> 
+</MDBFooter> 
       
     
   );
